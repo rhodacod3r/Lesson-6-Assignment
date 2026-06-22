@@ -4,7 +4,10 @@
   width: device-width;
 }
 body {
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 10px;
   margin: 0;
   background-color: #ffffff;
   color: #333;
@@ -26,6 +29,8 @@ body {
 }
 
 .main-nav ul {
+  display: flex;
+  flex-wrAP: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,6 +39,7 @@ body {
 .main-nav li {
   display: block;
   text-align: center;
+  margin: 5px;
   padding: 15px 20px;
 }
 
@@ -49,7 +55,7 @@ body {
   max-width: 1200px;
   margin: 20px auto;
 }
-
+.container 
 .intro {
   margin-bottom: 30px;
 }
@@ -66,7 +72,7 @@ body {
 }
 
 .column img {
-  width: 560px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -79,3 +85,43 @@ body {
   text-align: center;
   background-color: #f2f2f2;
 }
+
+@media (max-width: 768px) {
+
+  /* Stack layout vertically */
+  .container {
+    padding: 5px;
+  }
+
+  /* Make columns stack */
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  /* Navigation becomes vertical */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Make headings fit smaller screens */
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Improve spacing */
+  body {
+    padding: 5px;
+  }
+}
+
