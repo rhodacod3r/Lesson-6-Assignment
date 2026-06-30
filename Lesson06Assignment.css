@@ -74,7 +74,7 @@ justify-content: center;
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
 
   .main-nav ul {
     flex-direction: column;
